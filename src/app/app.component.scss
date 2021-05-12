@@ -1,3 +1,7 @@
+h1 {
+  margin: 2rem 0;
+}
+
 .card {
   display            : flex;
   flex-direction     : column;
@@ -6,8 +10,6 @@
   background         : #353535;
   color              : #fff;
   box-shadow         : rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height             : 100%;
-  width              : 100%;
   border-radius      : 4px;
   transition         : all 500ms;
   overflow           : hidden;
@@ -23,8 +25,8 @@
 }
 
 .basic-grid {
-  display: grid;
-  gap    : 1rem;
+  // display: grid;
+  // gap    : 1rem;
 
   /* 1 too skinny, too much code */
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
@@ -33,8 +35,8 @@
   /* grid-template-columns: repeat(12, 1fr); */
 
   /* 3  better sizing, but overflows */
-  /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+  // grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 
   /* 4 final */
-  grid-template-columns: repeat(auto-fit);
+  // grid-template-columns: repeat(auto-fit);
 }
