@@ -1,5 +1,3 @@
-
-
 h1 {
   margin: 2rem 0;
 }
@@ -19,6 +17,8 @@ h1 {
   background-size    : cover;
   background-position: center;
   background-repeat  : no-repeat;
+  font-size          : 3rem;
+  line-height        : 3.5rem;
 }
 
 .card:hover {
@@ -26,7 +26,7 @@ h1 {
   transform : translateY(-3px) scale(1.005);
 }
 
-.basic-grid {
+// .basic-grid {
   // display: grid;
   // gap    : 1rem;
 
@@ -41,4 +41,4 @@ h1 {
 
   /* 4 final */
   // grid-template-columns: repeat(auto-fit);
-}
+// }

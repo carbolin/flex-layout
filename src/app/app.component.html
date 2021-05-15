@@ -2,76 +2,77 @@
 
 <section class="basic-grid"
   gdGap="1rem"
-  gdColumns="repeat(auto-fit, minmax(240px, 1fr))">
-  <div class="card">1</div>
-  <div class="card">2</div>
-  <div class="card">3</div>
-  <!-- <div class="card">4</div>
-  <div class="card">5</div>
-  <div class="card">6</div>
-  <div class="card">7</div>
-  <div class="card">8</div>
-  <div class="card">9</div>
-  <div class="card">10</div>
-  <div class="card">11</div>
-  <div class="card">12</div> -->
+  gdColumns="repeat(auto-fit, minmax(150px, 1fr))">
+  <div class="card">🐢</div>
+  <div class="card">🐢</div>
+  <div class="card">🐢</div>
 </section>
-
 
 <h1>Auto Fill</h1>
 
 <section class="basic-grid"
   gdGap="1rem"
-  gdColumns="repeat(auto-fill, minmax(240px, 1fr))">
-  <div class="card">1</div>
-  <div class="card">2</div>
-  <div class="card">3</div>
-  <!-- <div class="card">4</div>
-  <div class="card">5</div>
-  <div class="card">6</div>
-  <div class="card">7</div>
-  <div class="card">8</div>
-  <div class="card">9</div>
-  <div class="card">10</div>
-  <div class="card">11</div>
-  <div class="card">12</div> -->
+  gdColumns="repeat(auto-fill, minmax(150px, 1fr))">
+  <div class="card">🐌</div>
+  <div class="card">🐌</div>
+  <div class="card">🐌</div>
 </section>
 
 <h1>Auto Row</h1>
 
 <section class="basic-grid"
   gdGap="1rem"
-  gdColumns="repeat(auto-fill, minmax(240px, 1fr))"
-  gdRows="240px!">
-  <div class="card">1</div>
-  <div class="card">2</div>
-  <div class="card">3</div>
-  <div class="card">4</div>
-  <div class="card">5</div>
-  <div class="card">6</div>
-  <div class="card">7</div>
-  <div class="card">8</div>
-  <div class="card">9</div>
-  <div class="card">10</div>
-  <div class="card">11</div>
-  <div class="card">12</div>
+  gdColumns="repeat(auto-fill, minmax(150px, 1fr))"
+  gdRows="150px!">
+  <div class="card">🐌</div>
+  <div class="card">🐌</div>
+  <div class="card">🍕</div>
+  <div class="card">🍕</div>
+  <div class="card">🐉</div>
+  <div class="card">🐉</div>
+  <div class="card">🐢</div>
+  <div class="card">🐢</div>
 </section>
 
-<h1>Auto Column</h1>
+<!-- <h1>Test Grid</h1>
+
+<section class="basic-grid"
+  gdGap="1rem" gdColumns="100px!" gdRows="100px!">
+  <ng-container *ngFor="let uni of units">
+    <div class="card">{{uni}}</div>
+  </ng-container>
+</section> -->
+
+
+<h1>Inline Grid</h1>
 
 <section class="basic-grid"
   gdGap="1rem"
-  gdRows="repeat(auto-fit, 200px)">
-  <div class="card">1</div>
-  <div class="card">2</div>
-  <div class="card">3</div>
-  <div class="card">4</div>
-  <div class="card">5</div>
-  <div class="card">6</div>
-  <div class="card">7</div>
-  <div class="card">8</div>
-  <div class="card">9</div>
-  <div class="card">10</div>
-  <div class="card">11</div>
-  <div class="card">12</div>
+  gdColumns="repeat(auto-fill, minmax(150px, 1fr))"
+  gdRows="150px!" [gdInline]="true">
+  <div class="card">🐌</div>
+  <div class="card">🐌</div>
+  <div class="card">🍕</div>
+  <div class="card">🍕</div>
+  <div class="card">🐉</div>
+  <div class="card">🐉</div>
+  <div class="card">🐢</div>
+  <div class="card">🐢</div>
+</section>
+
+
+<h1>gdRow and gdColumn</h1>
+
+<section class="basic-grid"
+  gdGap="1rem"
+  gdColumns="repeat(auto-fill, minmax(150px, 1fr))"
+  gdRows="150px!">
+  <div gdRow.gt-sm="span 2/auto" class="card">🐌</div>
+  <div class="card">🐌</div>
+  <div class="card">🍕</div>
+  <div class="card">🍕</div>
+  <div class="card">🐉</div>
+  <div class="card">🐉</div>
+  <div class="card" gdColumn.gt-sm="span 2/auto">🐢</div>
+  <div class="card">🐢</div>
 </section>
